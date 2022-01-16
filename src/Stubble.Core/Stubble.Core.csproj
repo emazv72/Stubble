@@ -5,7 +5,7 @@
     <TargetFrameworks>netstandard2.0;net472</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>Stubble.Core</AssemblyName>
-    <PackageId>Stubble.Core</PackageId>
+    <PackageId>Stubble.Core-private</PackageId>
     <PackageTags>template;mustache;text;generation;fast</PackageTags>
     <RepositoryType>git</RepositoryType>
     <Company>Alex McAuliffe</Company>
