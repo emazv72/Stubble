@@ -105,7 +105,7 @@ namespace Stubble.Core.Contexts
                 var lookupHit = false;
                 while (context != null)
                 {
-                    if (name.IndexOf('.') > 0)
+                    if (!RenderSettings.SkipDottedNameChildTraversal && name.IndexOf('.') > 0)
                     {
                         var names = name.Split('.');
                         value = context.view;

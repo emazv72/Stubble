@@ -19,6 +19,11 @@ namespace Stubble.Core.Settings
         public bool SkipRecursiveLookup { get; set; }
 
         /// <summary>
+        /// Gets or sets a value indicating whether dotted names should traverse child context
+        /// </summary>
+        public bool SkipDottedNameChildTraversal { get; set; }
+
+        /// <summary>
         /// Gets or sets a value indicating whether exceptions should be thrown if
         /// tags are defined which don't exist in the context
         /// </summary>

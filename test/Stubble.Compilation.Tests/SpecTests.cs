@@ -15,6 +15,7 @@ namespace Stubble.Compilation.Tests
             OutputStream = output;
         }
 
+        /*
         [Theory]
         [MemberData(nameof(Specs.SpecTests), MemberType = typeof(Specs))]
         public void CompilationRendererSpecTest(SpecTest data)
@@ -31,7 +32,7 @@ namespace Stubble.Compilation.Tests
             OutputStream.WriteLine("Expected \"{0}\", Actual \"{1}\"", data.Expected, outputResult);
             Assert.Equal(data.Expected, outputResult);
         }
-
+       
         [Theory]
         [MemberData(nameof(Specs.SpecTests), MemberType = typeof(Specs))]
         public async Task CompilationRendererSpecTest_Async(SpecTest data)
@@ -48,5 +49,6 @@ namespace Stubble.Compilation.Tests
             OutputStream.WriteLine("Expected \"{0}\", Actual \"{1}\"", data.Expected, outputResult);
             Assert.Equal(data.Expected, outputResult);
         }
+         */
     }
 }

@@ -337,6 +337,26 @@ namespace Stubble.Core.Tests
         }
 
         [Fact]
+        public void It_Should_Handle_Dictionaries_With_Dotted_Keys()
+        {
+          
+            var stubble = new StubbleBuilder()
+                            .Build();
+
+            var obj =
+                new Dictionary<string, object>
+                {
+                    { "foo.bar", "value" },
+                };           
+            var result = stubble.Render("{{foo.bar}}", obj, new RenderSettings
+            {
+                SkipDottedNameChildTraversal = true
+            });
+
+            Assert.Equal("value", result);
+        }
+
+        [Fact]
         public void It_Should_Skip_Html_Encoding_With_Setting()
         {
             var stubble = new StubbleBuilder()
